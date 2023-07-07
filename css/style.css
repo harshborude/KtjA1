@@ -1,0 +1,375 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --navbar-height: 59px;
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#seller{
+    margin: 34px;
+    display: flex;
+}
+#seller .box{ 
+    border: 2px solid white;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #6b6a6a;
+    margin-bottom: 20px;
+}
+
+#seller .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#seller .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+.focus{
+    display: flex;
+    text-align: center;
+}
+.focus:hover{
+    background-color: green;
+    color: black;
+}
+#sellersec::before{ 
+    content: "";
+    position: absolute;
+    background: url('../bg2.jpg') no-repeat center center/cover;
+    height: 2000px;
+   top: 630px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+
+
+
+
+#rev{
+    position: relative;
+    color: white;
+}
+#rev::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../bg3.jpg') no-repeat center center/cover;
+
+}
+#revbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#revbox input, 
+#revbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#revbox form{
+    width: 40%;
+}
+
+#revbox form button{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: blue;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+#revbox label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+
+#recsec::before{ 
+    content: "";
+    position: absolute;
+    background: url('../bg4.jpg') no-repeat center center/cover;
+    height: 1690px;
+    top:1410px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#rec{
+    margin: 34px;
+    display: flex;
+}
+#rec .box{ 
+    border: 2px solid white;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #6b6a6a;
+    margin-bottom: 20px;
+}
+
+#rec .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#rec .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+.para{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.para2{
+    color: rgb(34, 26, 26);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#searchForm {
+    display: flex;
+    align-items: center;
+  }
+  
+  #searchInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    flex: 1;
+  }
+  
+  #searchInput:focus {
+    outline: none;
+    border-color: blue;
+  }
+  
+  #searchForm button {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: blue;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+  }
+  
+  #searchForm button:hover {
+    background-color: green;
+  }
+  
+  .rech1{
+    color: rgb(66, 66, 66);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+
+  
+  .review-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+   
+  }
+  
+  .card {
+    width: 300px;
+    background-color: rgb(66, 66, 66);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    z-index: -1;
+  }
+  
+  .card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+  }
+  
+ 
+  
+
+  .demo-links a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 18px;
+    color: #666666;
+    text-decoration: none;
+  }
+  
+  
+  .demo-links a:hover {
+    color: blue;
+  }
+  
+  
+  
